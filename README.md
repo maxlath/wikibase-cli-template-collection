@@ -1,11 +1,6 @@
-# wikibase-cli templates
+# wikibase-cli template collection
 
 A collection of [wikibase-cli](https://github.com/maxlath/wikibase-cli) templates.
-
-Associated documentation:
-* [create-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)
-* [edit-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity)
-* [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)
 
 ## Install
 
@@ -25,10 +20,30 @@ git clone https://github.com/maxlath/wikibase-cli-templates
 ```
 
 ## Demo
-
 And now let's get started!
+
+### Create
+*Documentation: [wb create-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)*
+
 ```sh
-cd ./wikibase-cli-templates/edit
+cd wikibase-cli-templates/create
+
+# Display the help menu of a template
+wb create-entity ./latin_script_female_given_name.js --help
+
+# Get a preview of the generated edit
+wb create-entity ./latin_script_female_given_name.js "Clarenza" --dry
+
+# Actually make the edit
+wb create-entity ./latin_script_female_given_name.js "Clarenza"
+```
+
+### Edit
+*Documentation: [wb edit-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity)*
+
+
+```sh
+cd wikibase-cli-templates/edit
 
 # Display the help menu of a template
 wb edit-entity ./clear_language_terms.js --help
@@ -38,8 +53,14 @@ wb edit-entity ./clear_language_terms.js Q4115189 fr --dry
 
 # Actually make the edit
 wb edit-entity ./clear_language_terms.js Q4115189 fr
+```
 
-# Make a batch of arguments for that template
+### Batch
+*Documentation: [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)*
+
+Adapting the **edit** example above for batch mode:
+```sh
+# Make a batch of arguments for the template
 echo '
 Q4115189 fr
 Q4115189 en

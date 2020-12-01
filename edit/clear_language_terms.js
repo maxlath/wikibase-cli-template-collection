@@ -13,6 +13,7 @@ module.exports = {
   template: function (id, lang) {
     return {
       id,
+      summary: `clear ${lang} terms`,
       labels: {
         [lang]: null
       },
@@ -22,7 +23,6 @@ module.exports = {
       aliases: {
         [lang]: null
       },
-      summary: `clear ${lang} terms`,
     }
   }
 }

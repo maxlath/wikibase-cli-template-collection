@@ -12,6 +12,7 @@ module.exports = {
   template: function (name) {
     return {
       type: 'item',
+      summary: `female given name [[Special:Search/${name} haswbstatement:P31=Q5 -haswbstatement:P735|${name}]]`,
       labels: {
         nn: name,
         sl: name,
@@ -531,8 +532,7 @@ module.exports = {
         },
         // writing system: Latin script
         P282: 'Q8229',
-      },
-      summary: `female given name [[Special:Search/${name} haswbstatement:P31=Q5 -haswbstatement:P735|${name}]]`,
+      }
     }
   }
 }
