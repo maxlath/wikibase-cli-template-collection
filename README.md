@@ -2,6 +2,13 @@
 
 A collection of [wikibase-cli](https://github.com/maxlath/wikibase-cli) templates.
 
+The aim of this collection is to
+* document best practices
+* offer general purpose templates
+* offer more niche templates as examples of what's possible
+
+Contributions and [template requests](https://github.com/maxlath/wikibase-cli-template-collection/issues/new) welcome!
+
 ## Install
 
 If wikibase-cli isn't already installed and configured:
