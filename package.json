@@ -1,0 +1,25 @@
+{
+  "name": "wikibase-cli-template-collection",
+  "version": "1.0.0",
+  "description": "A collection of wikibase-cli templates",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlath/wikibase-cli-template-collection.git"
+  },
+  "keywords": [
+    "wikibase-cli",
+    "wikidata-cli",
+    "templates"
+  ],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/maxlath/wikibase-cli-template-collection/issues"
+  },
+  "homepage": "https://github.com/maxlath/wikibase-cli-template-collection#readme",
+  "dependencies": {
+    "wikibase-sdk": "^7.8.0"
+  }
+}
