@@ -2,6 +2,11 @@
 
 A collection of [wikibase-cli](https://github.com/maxlath/wikibase-cli) templates.
 
+Associated documentation:
+* [create-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)
+* [edit-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity)
+* [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)
+
 ## Install
 
 If wikibase-cli isn't already installed and configured:
@@ -23,7 +28,7 @@ git clone https://github.com/maxlath/wikibase-cli-templates
 
 And now let's get started!
 ```sh
-cd ./wikibase-cli-templates
+cd ./wikibase-cli-templates/edit
 
 # Display the help menu of a template
 wb edit-entity ./clear_language_terms.js --help
