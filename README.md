@@ -77,10 +77,10 @@ Templates:
 * [templates to edit entities](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/edit)
 
 Learn more:
-* [wb create-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)
-* [wb edit-entity](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity), specifically [Generate an edit object from a JS template function](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#generate-an-edit-object-from-a-js-template-function)
+* [`wb create-entity`](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)
+* [`wb edit-entity`](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity), specifically [Generate an edit object from a JS template function](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#generate-an-edit-object-from-a-js-template-function)
 * [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)
-* [wb generate-template](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wd-generate-template)
+* [`wb generate-template`](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wd-generate-template)
 
 ## Request
 
@@ -110,7 +110,7 @@ Templates:
 * [request template collection](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/request)
 
 Learn more:
-* [wb sparql](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wb-sparql), specifically [dynamic request from a JS template](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#dynamic-request-from-a-js-template)
+* [`wb sparql`](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wb-sparql), specifically [dynamic request from a JS template](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#dynamic-request-from-a-js-template)
 
 
 ## See also
