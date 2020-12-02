@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/maxlath/wikibase-cli-template-collection#readme",
   "dependencies": {
-    "wikibase-sdk": "^7.8.0"
+    "node-fetch": "^2.6.1",
+    "wikibase-sdk": "^7.8.0",
+    "wikidata-sdk": "^7.8.0",
+    "wtf_wikipedia": "^8.5.1"
   }
 }
