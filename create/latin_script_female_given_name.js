@@ -3,7 +3,7 @@
 module.exports = {
   args: '<name>' ,
 
-  description: 'Create an item for a femal given name in latin script',
+  description: 'Create an item for a female given name in latin script',
 
   examples: [
     { args: 'Clarenza' , comment: 'Created Q100967811 in one edit https://www.wikidata.org/w/index.php?title=Q100967811&oldid=1298859817' },
