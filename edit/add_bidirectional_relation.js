@@ -17,8 +17,8 @@ module.exports = {
     if (!isItemId(itemB)) throw new Error(`invalid item id: ${itemB}`)
 
     return [
-        { id: itemA, claims: { [property]: itemB } },
-        { id: itemB, claims: { [property]: itemA } },
+      { id: itemA, claims: { [property]: itemB } },
+      { id: itemB, claims: { [property]: itemA } },
     ]
   }
 }
