@@ -23,8 +23,11 @@ module.exports = {
 
     const entity = await getEntity(itemId, claimsPropertyId)
 
-    entity.claims[claimsPropertyId] = entity.claims[claimsPropertyId]
+    const allRemoved = entity.claims[claimsPropertyId].map(claim => ({ id: claim.id, remove: '' }))
+    const updatedClaims = entity.claims[claimsPropertyId]
       .map(reorderClaimQualifiers(qualifiersPropertiesIds))
+
+    entity.claims[claimsPropertyId] = allRemoved.concat(updatedClaims)
 
     entity.rawMode = true
 
@@ -69,12 +72,15 @@ const reorderClaimQualifiers = qualifiersPropertiesIds => claim => {
   })
   claim.qualifiers = { ...orderedQualifiers, ...qualifiers }
 
-  const currentOrder = claim['qualifiers-order']
-  const newOrder = qualifiersPropertiesIds.filter(propertyId => currentOrder.includes(propertyId))
-  currentOrder.forEach(propertyId => {
-    if (!newOrder.includes(propertyId)) newOrder.push(propertyId)
-  })
-  claim['qualifiers-order'] = newOrder
+  // const currentOrder = claim['qualifiers-order']
+  // const newOrder = qualifiersPropertiesIds.filter(propertyId => currentOrder.includes(propertyId))
+  // currentOrder.forEach(propertyId => {
+  //   if (!newOrder.includes(propertyId)) newOrder.push(propertyId)
+  // })
+  // claim['qualifiers-order'] = newOrder
+
+  delete claim.id
+  delete claim['qualifiers-order']
 
   return claim
 }
