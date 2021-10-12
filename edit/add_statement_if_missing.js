@@ -1,7 +1,5 @@
-const fetch = require('node-fetch')
-const { getEntities, simplify } = require('wikibase-sdk')({
-  instance: 'https://www.wikidata.org'
-})
+const { getEntity } = require('../lib/helpers')
+const { simplify } = require('wikibase-sdk')
 
 module.exports = {
   args: '<entity id> <property id> <value>',
@@ -28,14 +26,6 @@ module.exports = {
       }
     }
   }
-}
-
-const getEntity = async (id) => {
-  const url = getEntities({ ids: id, props: 'claims' })
-  const { entities } = await fetch(url).then(res => res.json())
-  const entity = entities[id]
-  if (entity != null) return entity
-  else throw new Error('entity not found')
 }
 
 const findExistingClaim = async (id, property, value) => {

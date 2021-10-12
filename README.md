@@ -14,6 +14,21 @@ Some (if not most) templates might be targeting a specific Wikibase instance (mo
 
 Contributions and [template requests](https://github.com/maxlath/wikibase-cli-template-collection/issues/new) welcome!
 
+
+## Summary
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Install](#install)
+- [Create / Edit entities](#create--edit-entities)
+- [Qualifiers](#qualifiers)
+- [Request](#request)
+- [See also](#see-also)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Install
 
 First, you need to have [NodeJS >= v8](https://nodejs.org/), which should come with the npm package manager.
@@ -81,6 +96,12 @@ Learn more:
 * [`wb edit-entity`](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity), specifically [Generate an edit object from a JS template function](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#generate-an-edit-object-from-a-js-template-function)
 * [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)
 * [`wb generate-template`](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wd-generate-template)
+
+## Qualifiers
+```sh
+# Remove all P1106 qualifiers on the 'Q4115189$7CCCA1D1-CD2B-4243-A9E1-652EA5F41AE0' claim
+wb remove-qualifier ./qualifiers/remove_qualifiers_by_property.js 'Q4115189$7CCCA1D1-CD2B-4243-A9E1-652EA5F41AE0' P1106
+```
 
 ## Request
 
