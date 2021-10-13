@@ -2,6 +2,10 @@ const { getEntity } = require('../lib/helpers')
 const { simplify } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<entity id> <property id> <value>',
 
   description: "Add a statement if it doesn't already exist",

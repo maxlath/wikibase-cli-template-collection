@@ -3,9 +3,13 @@
 const { isItemId, isPropertyId } = require('wikibase-sdk')
 
 module.exports = {
-  description: 'Add a quantity claim with a unit and an optional reference URL',
+  commands: [
+    'edit-entity'
+  ],
 
   args: [ '<id>', '<property>', '<quantity>', '<unit>', '[reference url]' ],
+
+  description: 'Add a quantity claim with a unit and an optional reference URL',
 
   examples: [
     { args: [ 'Q4115189', 'P2583', 123, 'Q531' ], comment: "add a statement that Q4115189's distance from Earth is 123 light-years" },

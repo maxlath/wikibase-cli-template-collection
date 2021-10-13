@@ -3,6 +3,10 @@
 const { isItemId } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<ordered items ids...>',
 
   description: 'Add follows (P155) / followed by (P156) claims to a serie of items',

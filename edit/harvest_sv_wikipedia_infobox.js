@@ -7,6 +7,10 @@ const fetch = require('node-fetch')
 require('util').inspect.defaultOptions.depth = 20
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<url>',
 
   description: 'This template aims to demonstrate how to harvest Wikipedia infoboxes. To adapt it to your use case, ',

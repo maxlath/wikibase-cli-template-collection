@@ -3,6 +3,10 @@
 const { isItemId } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<hasPartItem> <partOfItem>',
 
   description: "Add 'has part' (P527) / 'part of' (P361) claims to a pair of items",

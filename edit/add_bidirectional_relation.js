@@ -3,6 +3,10 @@
 const { isItemId, isPropertyId } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<relation-property-id> <item-id-a> <item-id-b>',
 
   description: 'Add a bidirection relation',

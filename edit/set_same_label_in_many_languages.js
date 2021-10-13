@@ -4,6 +4,10 @@
 const languages = [ 'en', 'de', 'fr', 'it', 'es' ]
 
 module.exports = {
+  commands: [
+    'edit-entity'
+  ],
+
   args: '<id> <label>',
 
   description: `Set the same label in many languages at once: ${languages.join(', ')}\nEdit this template to customize language list`,

@@ -1,6 +1,10 @@
 // Based on https://www.wikidata.org/wiki/User:Jura1/cli/latinscriptfemalegivenname.js
 
 module.exports = {
+  commands: [
+    'create-entity'
+  ],
+
   args: '<name>' ,
 
   description: 'Create an item for a female given name in latin script',
