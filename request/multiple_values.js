@@ -1,3 +1,5 @@
+// Same as ./multiple_values.minimalist.js but with validation and --help menu
+
 const { isPropertyId, isItemId } = require('wikibase-sdk')
 
 module.exports = {
