@@ -13,7 +13,7 @@ module.exports = {
 
   args: '<url>',
 
-  description: 'This template aims to demonstrate how to harvest Wikipedia infoboxes. To adapt it to your use case, ',
+  description: 'This template aims to demonstrate how to harvest Wikipedia infoboxes',
 
   examples: [
     { args: [ 'https://sv.wikipedia.org/wiki/Gulan_Avci' ], comment: 'Clear Q4115189 French labels, descriptions, and aliases' },
