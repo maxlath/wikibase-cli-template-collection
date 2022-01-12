@@ -16,7 +16,7 @@ module.exports = {
   description: 'This template aims to demonstrate how to harvest Wikipedia infoboxes',
 
   examples: [
-    { args: [ 'https://sv.wikipedia.org/wiki/Gulan_Avci' ], comment: 'Clear Q4115189 French labels, descriptions, and aliases' },
+    { args: [ 'https://sv.wikipedia.org/wiki/Gulan_Avci' ], comment: 'Import sv label and an image from Gulan_Avci on svwiki to Q3674337 on wikidata' },
   ],
 
   template: async url => {
