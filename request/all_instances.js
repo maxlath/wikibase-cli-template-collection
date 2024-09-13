@@ -1,6 +1,10 @@
 const { isItemId } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'sparql'
+  ],
+
   args: '<id>',
 
   description: 'Find all items are instance of, or subclass of an item that is instance of, the passed entity',

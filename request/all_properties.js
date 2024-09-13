@@ -1,4 +1,8 @@
 module.exports = {
+  commands: [
+    'sparql'
+  ],
+
   args: '[lang]',
 
   description: 'Get all properties of the target Wikibase instance',

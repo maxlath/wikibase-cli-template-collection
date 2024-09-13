@@ -3,6 +3,10 @@
 const { isPropertyId, isItemId } = require('wikibase-sdk')
 
 module.exports = {
+  commands: [
+    'sparql'
+  ],
+
   args: '<property> <values...>',
 
   description: 'Find all items for which a given property links to a set of values',
