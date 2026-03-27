@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxlath/wikibase-cli-template-collection.git"
+    "url": "https://codeberg.org/maxlath/wikibase-cli-template-collection"
   },
   "keywords": [
     "wikibase-cli",
@@ -16,9 +16,9 @@
   ],
   "author": "",
   "bugs": {
-    "url": "https://github.com/maxlath/wikibase-cli-template-collection/issues"
+    "url": "https://codeberg.org/maxlath/wikibase-cli-template-collection/issues"
   },
-  "homepage": "https://github.com/maxlath/wikibase-cli-template-collection#readme",
+  "homepage": "https://codeberg.org/maxlath/wikibase-cli-template-collection#readme",
   "dependencies": {
     "node-fetch": "^2.6.1",
     "wikibase-sdk": "^7.9.0",
