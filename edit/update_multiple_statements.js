@@ -1,4 +1,4 @@
-// See https://github.com/maxlath/wikibase-cli/issues/165
+// See https://codeberg.org/maxlath/wikibase-cli/issues/165
 const { simplify } = require('wikibase-sdk')
 const { getEntityClaims } = require('../lib/helpers')
 

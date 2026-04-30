@@ -1,9 +1,9 @@
 # wikibase-cli template collection
 
-A collection of [wikibase-cli](https://github.com/maxlath/wikibase-cli) templates:
-* [templates to create entities](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/create)
-* [templates to edit entities](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/edit)
-* [templates to generate and run SPARQL requests](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/request)
+A collection of [wikibase-cli](https://codeberg.org/maxlath/wikibase-cli) templates:
+* [templates to create entities](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/create)
+* [templates to edit entities](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/edit)
+* [templates to generate and run SPARQL requests](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/request)
 
 The aim of this collection is to
 * document best practices
@@ -12,7 +12,7 @@ The aim of this collection is to
 
 Some (if not most) templates might be targeting a specific Wikibase instance (most likely Wikidata).
 
-Contributions and [template requests](https://github.com/maxlath/wikibase-cli-template-collection/issues/new) welcome!
+Contributions and [template requests](https://codeberg.org/maxlath/wikibase-cli-template-collection/issues/new) welcome!
 
 
 ## Summary
@@ -33,7 +33,7 @@ Contributions and [template requests](https://github.com/maxlath/wikibase-cli-te
 
 First, you need to have [NodeJS >= v8](https://nodejs.org/), which should come with the npm package manager.
 
-If [wikibase-cli](https://github.com/maxlath/wikibase-cli) isn't already installed and configured:
+If [wikibase-cli](https://codeberg.org/maxlath/wikibase-cli) isn't already installed and configured:
 ```sh
 npm install --global wikibase-cli
 
@@ -46,7 +46,7 @@ wb config credentials https://www.wikidata.org
 
 Get a copy of those templates
 ```sh
-git clone https://github.com/maxlath/wikibase-cli-templates
+git clone https://codeberg.org/maxlath/wikibase-cli-templates
 cd wikibase-cli-templates
 # Required for templates that `require` dependencies, see the list in package.json
 npm install
@@ -88,14 +88,14 @@ cat ids_and_langs_to_clear | wb edit-entity ./clear_language_terms.js --batch --
 ```
 
 Templates:
-* [templates to create entities](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/create)
-* [templates to edit entities](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/edit)
+* [templates to create entities](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/create)
+* [templates to edit entities](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/edit)
 
 Learn more:
-* [`wb create-entity`](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-create-entity)
-* [`wb edit-entity`](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#wb-edit-entity), specifically [Generate an edit object from a JS template function](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#generate-an-edit-object-from-a-js-template-function)
-* [batch mode](https://github.com/maxlath/wikibase-cli/blob/master/docs/write_operations.md#batch-mode)
-* [`wb generate-template`](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wd-generate-template)
+* [`wb create-entity`](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/write_operations.md#wb-create-entity)
+* [`wb edit-entity`](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/write_operations.md#wb-edit-entity), specifically [Generate an edit object from a JS template function](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/write_operations.md#generate-an-edit-object-from-a-js-template-function)
+* [batch mode](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/write_operations.md#batch-mode)
+* [`wb generate-template`](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/read_operations.md#wd-generate-template)
 
 ## Qualifiers
 ```sh
@@ -128,12 +128,12 @@ wb sparql ./all_instances.js Q34770 --format json > Q34770_instances.json
 ```
 
 Templates:
-* [request template collection](https://github.com/maxlath/wikibase-cli-template-collection/tree/master/request)
+* [request template collection](https://codeberg.org/maxlath/wikibase-cli-template-collection/src/branch/main/request)
 
 Learn more:
-* [`wb sparql`](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#wb-sparql), specifically [dynamic request from a JS template](https://github.com/maxlath/wikibase-cli/blob/master/docs/read_operations.md#dynamic-request-from-a-js-template)
+* [`wb sparql`](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/read_operations.md#wb-sparql), specifically [dynamic request from a JS template](https://codeberg.org/maxlath/wikibase-cli/src/branch/main/docs/read_operations.md#dynamic-request-from-a-js-template)
 
 
 ## See also
-* [wikidata-scripting](https://github.com/maxlath/wikidata-scripting): examples of scripts to edit Wikidata
+* [wikidata-scripting](https://codeberg.org/maxlath/wikidata-scripting): examples of scripts to edit Wikidata
 * [wikidata-misc](https://github.com/generalist/wikidata-misc): various Wikidata maintenance/upload scripts

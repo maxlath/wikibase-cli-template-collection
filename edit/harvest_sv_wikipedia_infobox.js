@@ -1,4 +1,4 @@
-// Based on https://github.com/maxlath/wikidata-scripting/tree/master/harvest_infobox
+// Based on https://codeberg.org/maxlath/wikidata-scripting/tree/master/harvest_infobox
 
 const wtfwp = require('wtf_wikipedia')
 const { getSitelinkData, getEntitiesFromSitelinks } = require('wikidata-sdk')
